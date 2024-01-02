@@ -1,0 +1,88 @@
+* {
+    outline: 1px solid tomato-;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    /*16픽셀을 기준으로 보고 16px 나누기 16 한것을 62.5% 보게함*/
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    padding: 0 1.5rem;
+    line-height: 10rem;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.header .inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.header .gnb ul {
+    display: flex;
+    gap: 3rem;
+    font-size: 2.0rem;
+    font-weight: 500;
+}
+
+.header .sub_gnb ul {
+    display: flex;
+    gap: 3rem;
+    font-size: 1.4rem;
+}
+
+.header .sub_gnb ul li i {
+    font-size: 2.4rem;
+}
+
+.main_visual .main_slide .itm {
+    height: 90rem;
+}
+
+.main_visual .main_slide .itm01 {
+    background: url(../IMAGES/img-main-visual01.jpg) no-repeat center center/cover;
+}
+
+.main_visual .main_slide .itm02 {
+    background: url(../IMAGES/img-main-visual02.jpg) no-repeat center center/cover;
+}
+
+.main_visual .itm {
+    position: relative;
+}
+
+.main_visual .slogan {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 120rem;
+    width: 100%;
+}
+
+.main_visual .slogan p {
+    font-size: 3.0rem;
+    font-weight: 500;
+    color: #fff;
+    margin: 0 0 1.2rem 0;
+}
+
+.main_visual .slogan strong {
+    font-size: 8.0rem;
+    font-weight: 800;
+    color: #fff;
+    line-height: 1.2;
+}
