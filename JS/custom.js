@@ -8,14 +8,23 @@ $(function () {
         speed:1000,
         fade: true,
     });
+
+    $('.slide').slick({
+        arrows: false,
+        autoplay: false,
+        pauseOnHover: false,
+        dots: false,
+        speed:1000,
+        fade: true,
+    });
     
 
-    $('.main_visual .arrows .left').on('click', function () {
-        $('.main_slide').slick('slickPrev')
+    $('.sub_slide .arrows .left').on('click', function () {
+        $('.slide').slick('slickPrev')
     });
 
-    $('.main_visual .arrows .right').on('click', function () {
-        $('.main_slide').slick('slickNext')
+    $('.sub_slide .arrows .right').on('click', function () {
+        $('.slide').slick('slickNext')
     });
 
 
